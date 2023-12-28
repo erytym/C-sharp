@@ -1,0 +1,23 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Security.Cryptography.X509Certificates;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace erytym_coding_checking
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter the minutes you want to turn to seconds:");
+            string minutes = Console.ReadLine();
+            int min = Convert.ToInt32(minutes);
+            Console.WriteLine($"You entered {minutes} minutes");
+            int seconds = min * 60;
+            Console.WriteLine($"Entered minutes into seconds is: {seconds}");
+            Console.ReadLine();
+        }
+    }
+}

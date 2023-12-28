@@ -1,0 +1,22 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Security.Cryptography.X509Certificates;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace erytym_coding_checking
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter the age to turn it into days:");
+            int age = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine($"You are {age} years old.");
+            int days = age * 365;
+            Console.WriteLine($"So you are: {days} days old!");
+            Console.ReadLine();
+        }
+    }
+}

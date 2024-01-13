@@ -1,0 +1,31 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace practice_c__problems
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter the size of the array:");
+            int size = Convert.ToInt32(Console.ReadLine());
+
+            string[] myStringArray = new string[size];
+
+            for(int i = 0; i < size; i++)
+            {
+                Console.WriteLine($"Enter elements {i+1} :");
+                myStringArray[i]= Console.ReadLine();
+            }
+            Console.WriteLine("Your given array elements are:");
+            for(int i = 0; i < size;i++)
+            {
+                Console.WriteLine(myStringArray[i]);
+                Console.ReadLine();
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace dictionary_c_
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Dictionary<int, string> rookiesOfTheYear = new Dictionary<int, string>();
+
+            rookiesOfTheYear.Add(1, "John J");
+            rookiesOfTheYear.Add(2, "Joe");
+            rookiesOfTheYear.Add(3, "Johny");
+
+            Console.WriteLine(rookiesOfTheYear[1]);
+            Console.ReadLine();
+        }
+    }
+}

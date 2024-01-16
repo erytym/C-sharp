@@ -1,0 +1,38 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace simple_fundamental_practices
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Robot robot1 = new Robot("Tom", "Red", 30);
+            Robot robot2 = new Robot("Jerry", "Blue", 40);
+
+            robot1.introduceSelf();
+            robot2.introduceSelf();
+        }
+    }
+    class Robot
+    {
+        public string Name { get; }
+        public string Color { get; }
+        public int Weight { get; }
+
+        public Robot(string givenName, string givenColor, int givenWeight)
+        {
+            this.Name = givenName;
+            this.Color = givenColor;
+            this.Weight = givenWeight;
+        }
+        public void introduceSelf()
+        {
+            Console.WriteLine("My name is: " + this.Name);
+            Console.ReadLine();
+        }
+    }
+}
